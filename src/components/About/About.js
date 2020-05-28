@@ -24,9 +24,8 @@ export default class About extends Component {
             <Route path="/about/history" component={History} />
             <Route path="/about/contact" component={Contact} />
             <Route
-             exact
               path="/about"
-              render={() => {
+              render={() => (
                 <div>
                   <h1 className="title">About WestSide University:</h1>
                   <p>
@@ -45,8 +44,8 @@ export default class About extends Component {
                     scelerisque convallis lacus. Mauris semper lorem mauris, sed
                     dignissim eros consectetur nec.
                   </p>
-                </div>;
-              }}
+                </div>
+    )}
             />
           </Switch>
         </div>
